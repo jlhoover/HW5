@@ -35,6 +35,7 @@ async function addPArecord(parecord, username) {
     console.log ('Add PA record User NAME of ' + user.username);
     let newrecord = parecord;
     parecord.createdBy = username;
+    // TODO - add correct date?
     parecord.createdDate =  Date.now();
     parecord.createdName = user.username;
     let dbrecord = new PArecord(newrecord);
